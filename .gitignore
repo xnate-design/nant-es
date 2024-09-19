@@ -8,3 +8,5 @@ node_modules
 .npmrc
 .DS_Store
 lerna-debug.log
+
+packages/*/dist
