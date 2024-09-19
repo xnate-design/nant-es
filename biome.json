@@ -1,5 +1,11 @@
 {
 	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+	"files": {
+		"include": [
+			"packages/*/src/**/*.ts",
+			"packages/*/test/**/*.ts"
+		]
+	},
 	"organizeImports": {
 		"enabled": true
 	},
@@ -13,8 +19,7 @@
 		"enabled": true,
 		"formatWithErrors": false,
 		"indentStyle": "tab",
-		"indentWidth": 2,
-		"indentSize": 2
+		"indentWidth": 2
 	},
 	"javascript": {
 		"formatter": {

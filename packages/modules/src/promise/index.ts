@@ -1,13 +1,13 @@
-import { isCallable } from "@nant-es/internal";
+import { isCallable } from '@nant-es/internal';
 
 export class NPromise {
-	state: "pending" | "fulfilled" | "rejected";
-	fulfillReactions: any[];
-	rejectReactions: any[];
+	state: 'pending' | 'fulfilled' | 'rejected';
+	fulfillReactions: NPromise[];
+	rejectReactions: NPromise[];
 	isHandled: boolean;
-	static PENDING: "pending" = "pending";
-	static FULFILLED: "fulfilled" = "fulfilled";
-	static REJECTED: "rejected" = "rejected";
+	static PENDING = 'pending' as const;
+	static FULFILLED = 'fulfilled' as const;
+	static REJECTED = 'rejected' as const;
 
 	constructor(executor) {
 		// 1. If NewTarget is undefined, throw a TypeError exception.
@@ -26,5 +26,3 @@ export class NPromise {
 		this.isHandled = false;
 	}
 }
-
-
