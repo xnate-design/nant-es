@@ -1,0 +1,38 @@
+{
+  "name": "nant-es-core",
+  "version": "1.0.0",
+  "description": "nant es core",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "check": "biome check --write ./packages",
+    "lint": "biome lint --write ./packages",
+    "format": "biome format --write ./packages",
+    "preversion": "lerna version",
+    "build": "lerna build",
+    "publish": "lerna publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "es",
+    "ecmascript"
+  ],
+  "author": "Nate Wang <wangbaoqi8839@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "@rollup/plugin-alias": "^5.1.0",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^22.5.4",
+    "lerna": "^8.1.8",
+    "rollup": "^4.21.2",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-dts": "^6.1.1",
+    "tslib": "^2.7.0"
+  }
+}
