@@ -18,12 +18,19 @@
 	"scripts": {
 		"build": "rollup -c"
 	},
-	"keywords": ["es", "ecmascript", "es-internal"],
+	"keywords": [
+		"es",
+		"ecmascript",
+		"es-internal"
+	],
 	"packageManager": "pnpm@8.6.3",
-	"files": ["dist"],
+	"files": [
+		"dist"
+	],
 	"exports": {
 		".": "./src/index.ts",
 		"./array": "./src/array/index.ts",
 		"./package.json": "./package.json"
-	}
+	},
+	"gitHead": "c78593a304a7d6ed2b77f70355034976bb816a18"
 }
