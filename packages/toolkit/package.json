@@ -21,7 +21,7 @@
 	"keywords": [
 		"es",
 		"ecmascript",
-		"es-internal"
+		"es-toolkit"
 	],
 	"publishConfig": {
 		"access": "public"
@@ -35,5 +35,5 @@
 		"./array": "./src/array/index.ts",
 		"./package.json": "./package.json"
 	},
-	"gitHead": "c7332410d1d7a59a6f7700e1b32331a3c7255d35"
+	"gitHead": "0d137e640ef160c91111800292fbb521486c4329"
 }

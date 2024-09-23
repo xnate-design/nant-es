@@ -9,9 +9,9 @@
     "lint": "biome lint --write ./packages",
     "format": "biome format --write ./packages",
     "preversion": "lerna version",
-    "build": "lerna build",
+    "build": "lerna run build",
     "publish": "lerna publish",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "lerna run test",
     "prepare": "husky"
   },
   "keywords": [
@@ -37,6 +37,7 @@
     "rollup": "^4.21.2",
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-dts": "^6.1.1",
-    "tslib": "^2.7.0"
+    "tslib": "^2.7.0",
+    "vitest": "^2.1.1"
   }
 }
