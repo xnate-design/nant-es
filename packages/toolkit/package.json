@@ -23,6 +23,9 @@
 		"ecmascript",
 		"es-internal"
 	],
+	"publishConfig": {
+		"access": "public"
+	},
 	"packageManager": "pnpm@8.6.3",
 	"files": [
 		"dist"
@@ -32,5 +35,5 @@
 		"./array": "./src/array/index.ts",
 		"./package.json": "./package.json"
 	},
-	"gitHead": "a20ea992e06518aacd6a9926142245eab2d4e980"
+	"gitHead": "29ccb0c85b65f545bda760b315494d7d6e46b05d"
 }
