@@ -1,6 +1,1 @@
-
-
-export class NString {
-
-}
-
+export class NString {}

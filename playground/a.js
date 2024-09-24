@@ -1,12 +1,4 @@
+import { isCallable } from '@nant-es/internal';
 
-const getName = () => 'a'
-const obj = {
-  name: 'bate'
-}
-let name = 'bao'
 
-export {
-  obj,
-  name,
-  getName
-}
+console.log(isCallable(() => null));

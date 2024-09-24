@@ -64,6 +64,12 @@ importers:
 
   packages/toolkit: {}
 
+  playground:
+    dependencies:
+      '@nant-es/internal':
+        specifier: ^1.0.0
+        version: 1.0.0
+
 packages:
 
   '@babel/code-frame@7.24.7':
@@ -372,6 +378,9 @@ packages:
   '@lerna/create@8.1.8':
     resolution: {integrity: sha512-wi72R01tgjBjzG2kjRyTHl4yCTKDfDMIXRyKz9E/FBa9SkFvUOAE4bdyY9MhEsRZmSWL7+CYE8Flv/HScRpBbA==}
     engines: {node: '>=18.0.0'}
+
+  '@nant-es/internal@1.0.0':
+    resolution: {integrity: sha512-hoKWJd1eZOAHUqz/+WMolF67gKZ0xhINjSolhW2TudDbBTJ5jXVCFJHTBTICcKRdJ55UOCKNogcON1+LDAjNxA==}
 
   '@napi-rs/wasm-runtime@0.2.4':
     resolution: {integrity: sha512-9zESzOO5aDByvhIAsOy9TbpZ0Ur2AJbUI7UT73kcUTS2mxAMHOBaa1st/jAymNoCtvrit99kkzT1FZuXVcgfIQ==}
@@ -3340,6 +3349,8 @@ snapshots:
       - encoding
       - supports-color
       - typescript
+
+  '@nant-es/internal@1.0.0': {}
 
   '@napi-rs/wasm-runtime@0.2.4':
     dependencies:
