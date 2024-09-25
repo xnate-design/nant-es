@@ -1,6 +1,6 @@
 {
 	"name": "@nant-es/modules",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "nant-es-core internal methods for comparison, conversion, object",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
