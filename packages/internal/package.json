@@ -25,11 +25,17 @@
 		"ecmascript",
 		"es-internal"
 	],
+	"exports": {
+		".": "./src/index.ts",
+		"./comparison": "./src/comparison/index.ts",
+		"./conversion": "./src/conversion/index.ts",
+		"./package.json": "./package.json"
+	},
 	"publishConfig": {
 		"access": "public",
-		"main": "dist/index.js",
-		"module": "dist/index.mjs",
-		"types": "dist/index.d.ts",
+		"main": "./dist/index.js",
+		"module": "./dist/index.mjs",
+		"types": "./dist/index.d.ts",
 		"exports": {
 			".": {
 				"import": {
@@ -68,11 +74,5 @@
 	"files": [
 		"dist"
 	],
-	"exports": {
-		".": "./src/index.ts",
-		"./comparison": "./src/comparison/index.ts",
-		"./conversion": "./src/conversion/index.ts",
-		"./package.json": "./package.json"
-	},
 	"gitHead": "f00ce605735acfba49b8ee02740ea759aa7cb8ac"
 }
