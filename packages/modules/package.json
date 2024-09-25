@@ -36,5 +36,5 @@
 		"./promise": "./src/promise/index.ts",
 		"./package.json": "./package.json"
 	},
-	"gitHead": "c7332410d1d7a59a6f7700e1b32331a3c7255d35"
+	"gitHead": "f00ce605735acfba49b8ee02740ea759aa7cb8ac"
 }

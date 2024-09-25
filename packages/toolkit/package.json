@@ -35,5 +35,5 @@
 		"./array": "./src/array/index.ts",
 		"./package.json": "./package.json"
 	},
-	"gitHead": "0d137e640ef160c91111800292fbb521486c4329"
+	"gitHead": "f00ce605735acfba49b8ee02740ea759aa7cb8ac"
 }
