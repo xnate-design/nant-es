@@ -1,6 +1,6 @@
 {
   "name": "playground",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "type": "module",
   "main": "index.js",
@@ -12,6 +12,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@nant-es/internal": "^1.0.1"
+    "@nant-es/internal": "^1.0.2"
   }
 }
