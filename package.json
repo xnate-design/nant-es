@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "nant es core",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "check": "biome check --write ./packages",
