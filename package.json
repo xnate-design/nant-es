@@ -8,7 +8,7 @@
     "check": "biome check --write ./packages",
     "lint": "biome lint --write ./packages",
     "format": "biome format --write ./packages",
-    "preversion": "lerna version",
+    "prepublish": "zx scripts/update-package.mjs",
     "build": "lerna run build",
     "publish": "lerna publish",
     "test": "lerna run test",
@@ -21,7 +21,8 @@
   "author": "Nate Wang <wangbaoqi8839@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "zx": "^8.1.9"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",

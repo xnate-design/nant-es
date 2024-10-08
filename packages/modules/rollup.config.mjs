@@ -10,7 +10,7 @@ import dstPlugin from 'rollup-plugin-dts';
 
 const require = createRequire(import.meta.url);
 const packageDir = './' || process.env.PACKAGE_DIR;
-const packageJSON = require(`${packageDir}/package.json`);
+const exportsJSON = require(`${packageDir}/exports.json`);
 
 const clearDir = (dir) => {
 	const dirPath = join(packageDir, dir);
@@ -88,7 +88,7 @@ const declarationOptions = (options) => {
 
 export default (cmdArgs) => {
 	console.log('cmdArgs', cmdArgs);
-	const entrypoints = Object.values(packageJSON.exports).filter(
+	const entrypoints = Object.values(exportsJSON).filter(
 		(f) => /^(\.\/)?src\//.test(f) && f.endsWith('.ts'),
 	);
 

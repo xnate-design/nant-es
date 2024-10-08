@@ -1,0 +1,6 @@
+{
+  ".": "./src/index.ts",
+  "./comparison": "./src/comparison/index.ts",
+  "./conversion": "./src/conversion/index.ts",
+  "./package.json": "./package.json"
+}

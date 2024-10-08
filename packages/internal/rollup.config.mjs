@@ -10,7 +10,7 @@ import dstPlugin from 'rollup-plugin-dts';
 
 const require = createRequire(import.meta.url);
 const packageDir = './' || process.env.PACKAGE_DIR;
-const packageJSON = require(`${packageDir}/package.json`);
+const exportsJSON = require(`${packageDir}/exports.json`);
 
 const clearDir = (dir) => {
 	const dirPath = join(packageDir, dir);
@@ -38,7 +38,7 @@ const fileNames = (extension = 'js') => {
 
 const libBuildOptions = (options) => {
 	const { entrypoints, extension, format, outDir, sourcemap } = options;
-
+	const isESM = format === 'esm';
 	return {
 		input: mapInputs(entrypoints),
 		output: {
@@ -46,7 +46,7 @@ const libBuildOptions = (options) => {
 			dir: outDir,
 			sourcemap,
 			...fileNames(extension),
-			preserveModules: true,
+			preserveModules: isESM,
 			generatedCode: 'es2015',
 			hoistTransitiveImports: false,
 		},
@@ -88,9 +88,11 @@ const declarationOptions = (options) => {
 
 export default (cmdArgs) => {
 	console.log('cmdArgs', cmdArgs);
-	const entrypoints = Object.values(packageJSON.exports).filter(
+	const entrypoints = Object.values(exportsJSON).filter(
 		(f) => /^(\.\/)?src\//.test(f) && f.endsWith('.ts'),
 	);
+
+	console.log(entrypoints, 'entrypoints');
 
 	clearDir('dist');
 

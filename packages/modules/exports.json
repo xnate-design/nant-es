@@ -1,0 +1,6 @@
+{
+  ".": "./src/index.ts",
+  "./array": "./src/array/index.ts",
+  "./promise": "./src/promise/index.ts",
+  "./package.json": "./package.json"
+}
