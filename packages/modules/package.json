@@ -16,8 +16,7 @@
     "url": "https://github.com/Wangbaoqi/nantTech-ES/issues"
   },
   "scripts": {
-    "build": "rollup -c",
-		"publish": "pnpm publish --access public"
+    "build": "rollup -c"
   },
   "keywords": [
     "es",
@@ -37,5 +36,5 @@
     "./promise": "./src/promise/index.ts",
     "./package.json": "./package.json"
   },
-  "gitHead": "f00ce605735acfba49b8ee02740ea759aa7cb8ac"
+  "gitHead": "7f297d9aba080d959e020364334e6ea1c09162cd"
 }
