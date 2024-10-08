@@ -17,6 +17,7 @@
   },
   "scripts": {
     "build": "rollup -c",
+		"publish": "pnpm publish --access public",
     "test": "vitest",
     "test:coverage": "vitest run --coverage"
   },

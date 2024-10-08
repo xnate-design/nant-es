@@ -16,7 +16,8 @@
     "url": "https://github.com/Wangbaoqi/nantTech-ES/issues"
   },
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+		"publish": "pnpm publish --access public"
   },
   "keywords": [
     "es",
