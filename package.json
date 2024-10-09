@@ -5,6 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "prepare": "husky",
     "preinstall": "npx only-allow pnpm",
     "check": "biome check --write ./packages",
     "lint": "biome lint --write ./packages",
@@ -13,7 +14,7 @@
     "build": "lerna run build",
     "publish": "lerna publish",
     "test": "lerna run test",
-    "prepare": "husky"
+    "dev:docs": "pnpm --prefix docs run dev"
   },
   "keywords": [
     "es",

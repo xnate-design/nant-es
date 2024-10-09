@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "vendor-chunks/use-composed-ref@1.3.0_react@18.3.1";
+exports.ids = ["vendor-chunks/use-composed-ref@1.3.0_react@18.3.1"];
+exports.modules = {
+
+/***/ "(ssr)/../node_modules/.pnpm/use-composed-ref@1.3.0_react@18.3.1/node_modules/use-composed-ref/dist/use-composed-ref.esm.js":
+/*!****************************************************************************************************************************!*\
+  !*** ../node_modules/.pnpm/use-composed-ref@1.3.0_react@18.3.1/node_modules/use-composed-ref/dist/use-composed-ref.esm.js ***!
+  \****************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"(ssr)/../node_modules/.pnpm/next@14.0.3_@babel+core@7.25.7_@opentelemetry+api@1.9.0_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nvar updateRef = function updateRef(ref, value) {\n    if (typeof ref === \"function\") {\n        ref(value);\n        return;\n    }\n    ref.current = value;\n};\nvar useComposedRef = function useComposedRef(libRef, userRef) {\n    var prevUserRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();\n    return (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function(instance) {\n        libRef.current = instance;\n        if (prevUserRef.current) {\n            updateRef(prevUserRef.current, null);\n        }\n        prevUserRef.current = userRef;\n        if (!userRef) {\n            return;\n        }\n        updateRef(userRef, instance);\n    }, [\n        userRef\n    ]);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useComposedRef);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi4vbm9kZV9tb2R1bGVzLy5wbnBtL3VzZS1jb21wb3NlZC1yZWZAMS4zLjBfcmVhY3RAMTguMy4xL25vZGVfbW9kdWxlcy91c2UtY29tcG9zZWQtcmVmL2Rpc3QvdXNlLWNvbXBvc2VkLXJlZi5lc20uanMiLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQTRDO0FBRTVDLElBQUlFLFlBQVksU0FBU0EsVUFBVUMsR0FBRyxFQUFFQyxLQUFLO0lBQzNDLElBQUksT0FBT0QsUUFBUSxZQUFZO1FBQzdCQSxJQUFJQztRQUNKO0lBQ0Y7SUFDQUQsSUFBSUUsT0FBTyxHQUFHRDtBQUNoQjtBQUVBLElBQUlFLGlCQUFpQixTQUFTQSxlQUFlQyxNQUFNLEVBQUVDLE9BQU87SUFDMUQsSUFBSUMsY0FBY1QsNkNBQU1BO0lBQ3hCLE9BQU9DLGtEQUFXQSxDQUFDLFNBQVVTLFFBQVE7UUFDbkNILE9BQU9GLE9BQU8sR0FBR0s7UUFFakIsSUFBSUQsWUFBWUosT0FBTyxFQUFFO1lBQ3ZCSCxVQUFVTyxZQUFZSixPQUFPLEVBQUU7UUFDakM7UUFFQUksWUFBWUosT0FBTyxHQUFHRztRQUV0QixJQUFJLENBQUNBLFNBQVM7WUFDWjtRQUNGO1FBRUFOLFVBQVVNLFNBQVNFO0lBQ3JCLEdBQUc7UUFBQ0Y7S0FBUTtBQUNkO0FBRUEsaUVBQWVGLGNBQWNBLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9yZWFjdC1kb2NzLy4uL25vZGVfbW9kdWxlcy8ucG5wbS91c2UtY29tcG9zZWQtcmVmQDEuMy4wX3JlYWN0QDE4LjMuMS9ub2RlX21vZHVsZXMvdXNlLWNvbXBvc2VkLXJlZi9kaXN0L3VzZS1jb21wb3NlZC1yZWYuZXNtLmpzP2M2NjEiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgdXNlUmVmLCB1c2VDYWxsYmFjayB9IGZyb20gJ3JlYWN0JztcblxudmFyIHVwZGF0ZVJlZiA9IGZ1bmN0aW9uIHVwZGF0ZVJlZihyZWYsIHZhbHVlKSB7XG4gIGlmICh0eXBlb2YgcmVmID09PSAnZnVuY3Rpb24nKSB7XG4gICAgcmVmKHZhbHVlKTtcbiAgICByZXR1cm47XG4gIH1cbiAgcmVmLmN1cnJlbnQgPSB2YWx1ZTtcbn07XG5cbnZhciB1c2VDb21wb3NlZFJlZiA9IGZ1bmN0aW9uIHVzZUNvbXBvc2VkUmVmKGxpYlJlZiwgdXNlclJlZikge1xuICB2YXIgcHJldlVzZXJSZWYgPSB1c2VSZWYoKTtcbiAgcmV0dXJuIHVzZUNhbGxiYWNrKGZ1bmN0aW9uIChpbnN0YW5jZSkge1xuICAgIGxpYlJlZi5jdXJyZW50ID0gaW5zdGFuY2U7XG5cbiAgICBpZiAocHJldlVzZXJSZWYuY3VycmVudCkge1xuICAgICAgdXBkYXRlUmVmKHByZXZVc2VyUmVmLmN1cnJlbnQsIG51bGwpO1xuICAgIH1cblxuICAgIHByZXZVc2VyUmVmLmN1cnJlbnQgPSB1c2VyUmVmO1xuXG4gICAgaWYgKCF1c2VyUmVmKSB7XG4gICAgICByZXR1cm47XG4gICAgfVxuXG4gICAgdXBkYXRlUmVmKHVzZXJSZWYsIGluc3RhbmNlKTtcbiAgfSwgW3VzZXJSZWZdKTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IHVzZUNvbXBvc2VkUmVmO1xuIl0sIm5hbWVzIjpbInVzZVJlZiIsInVzZUNhbGxiYWNrIiwidXBkYXRlUmVmIiwicmVmIiwidmFsdWUiLCJjdXJyZW50IiwidXNlQ29tcG9zZWRSZWYiLCJsaWJSZWYiLCJ1c2VyUmVmIiwicHJldlVzZXJSZWYiLCJpbnN0YW5jZSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/../node_modules/.pnpm/use-composed-ref@1.3.0_react@18.3.1/node_modules/use-composed-ref/dist/use-composed-ref.esm.js\n");
+
+/***/ })
+
+};
+;
