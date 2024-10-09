@@ -1,8 +1,6 @@
 import { NavBar, Footer, HomeHero } from '@/components/layout';
-import { Suspense } from 'react';
-import { HomeCard } from '@/components/business';
 import { Metadata } from 'next/types';
-import { siteConfig, siteConfigNav } from '@/config/site';
+import { siteConfig } from '@/config/site';
 
 export function generateMetadata(): Metadata {
   return {
@@ -17,17 +15,6 @@ export default function Home() {
       <NavBar />
       <div className='mt-10 min-h-[calc(100vh-_190px)]'>
         <HomeHero />
-        {/* {siteConfigNav.map((nav, idx) => {
-          return (
-            <Suspense fallback={'loading'} key={idx}>
-              <HomeCard
-                title={`${siteConfig.postTitle} ${nav.title}`}
-                tag={nav.label}
-                redirectRoute={nav.link}
-              />
-            </Suspense>
-          );
-        })} */}
       </div>
       <Footer />
     </div>
