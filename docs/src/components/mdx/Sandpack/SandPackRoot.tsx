@@ -1,20 +1,7 @@
 'use client';
-import {
-  SandpackProvider,
-  SandpackLayout,
-  SandpackCodeEditor,
-  SandpackCodeViewer,
-  SandpackPreview,
-  SandpackTranspiledCode,
-  SandpackFileExplorer,
-  SandpackConsole,
-  SandpackFile
-} from '@codesandbox/sandpack-react';
-import { CustomTheme } from './Themes';
-
-import { PresetWrapper } from './CodeWrapper';
+import { Sandpack } from '@codesandbox/sandpack-react';
 import { createFileMap } from './createFileMap';
-import { Children, useState } from 'react';
+import { Children } from 'react';
 
 type SandpackProps = {
   children: React.ReactNode;
@@ -23,8 +10,7 @@ type SandpackProps = {
 };
 
 export default function SandpackRoot(props: SandpackProps) {
-  const { children, autorun = true, showDevTools = false } = props;
-  const [devToolsLoaded, setDevToolsLoaded] = useState(false);
+  const { children } = props;
   const codeSnippets = Children.toArray(children) as React.ReactElement[];
   const files = createFileMap(codeSnippets);
 
@@ -34,19 +20,17 @@ export default function SandpackRoot(props: SandpackProps) {
   };
 
   return (
-    <div className='sandpack w-full my-8 '>
-      <SandpackProvider
-        theme={CustomTheme}
-        template='react'
+    <div className='w-full my-8'>
+      <Sandpack
+        theme={'light'}
+        files={files}
+        template='vanilla'
         options={{
-          initMode: 'user-visible',
-          initModeObserverOptions: { rootMargin: '1400px 0px' },
-          bundlerURL: 'https://1e4ad8f7.sandpack-bundler-4bw.pages.dev'
+          showTabs: false,
+          layout: "console"
         }}
         {...props}
-      >
-        <PresetWrapper providedFiles={Object.keys(files)} />
-      </SandpackProvider>
+      />
     </div>
   );
 }

@@ -1,5 +1,3 @@
-import { IconNotepadDash, IconReact, IconComponent } from '@/components/icons/';
-
 import {
   Castle as IconOverview,
   Glasses as IconGlasses,
@@ -22,41 +20,42 @@ export type sourceRoutesItemType = {
   items?: sourceRoutesItemType[];
 };
 
+const guide = [
+  {
+    name: 'Introduction',
+    path: '/docs/guide/introduction',
+    icon: IconOverview,
+  },
+  {
+    name: 'Installation',
+    path: '/docs/guide/install',
+    icon: IconOverview,
+  },
+];
+
 const internal = [
   {
-    name: 'Data Type',
-    path: '/docs/internal',
+    name: 'Type Conversion',
+    path: '/docs/internal/typeConversion/toPrimitive',
     icon: IconOverview,
-    collapsed: false,
+    collapsed: true,
     items: [
       {
-        name: 'Language Type',
-        path: '/docs/internal/languageType'
+        name: 'ToPrimitive',
+        path: '/docs/internal/typeConversion/toPrimitive'
       },
-      {
-        name: 'Specification Type',
-        path: '/docs/internal/specificationType'
-      }
     ]
   },
   {
-    name: 'Abstract Operations',
-    path: '/docs/internal/abstract',
+    name: 'Comparison Operation',
+    path: '/docs/internal/comparison/requireObjectCoercible',
     icon: DatabaseBackup,
     collapsed: false,
     items: [
       {
-        name: 'Type Conversion',
-        path: '/docs/internal/typeConversion'
+        name: 'RequireObjectCoercible',
+        path: '/docs/internal/comparison/requireObjectCoercible'
       },
-      {
-        name: 'Number Conversion',
-        path: '/docs/internal/numberConversion'
-      },
-      {
-        name: 'Comparison Operation',
-        path: '/docs/internal/comparisonOperation'
-      }
     ]
   }
 ];
@@ -333,6 +332,7 @@ const toolkit = [
 ];
 
 export const sourceRoutes: sourceRoutesType = {
+  guide,
   internal,
   modules,
   toolkit

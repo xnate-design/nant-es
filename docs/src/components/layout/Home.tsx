@@ -57,7 +57,7 @@ export const HomeHero = () => {
             </div>
           </div>
           <div className="lg:col-span-1">
-            <Terminal />
+            <Terminal data={siteConfig.homeHero.terminal} />
           </div>
         </div>
       </div>

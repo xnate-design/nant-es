@@ -108,7 +108,7 @@ export const siteConfig = {
   title: 'NantTech Toolkit',
   name: 'toolkit of Nant Tech',
   postTitle: 'Post of',
-  description: 'FrontEnd that everything of Nant Tech blog',
+  description: 'Internals methods, Modules methods and toolkit methods of Nant Tech Toolkit',
   siteUrl: 'https://tookit.wangbaoqi.tech',
   author: 'WangBaoQi',
   email: 'wangbaoqi8839@gmail.com',
@@ -120,44 +120,59 @@ export const siteConfig = {
   },
   homeHero: {
     extra: [
-      'Type Conversion Methods that Include All of <strong>ECMAScript</strong>',
-      'Type Conversion Methods that Include All of ECMAScript',
-      'Type Conversion Methods that Include All of ECMAScript',
-      'Type Conversion Methods that Include All of ECMAScript',
-      'Type Conversion Methods that Include All of ECMAScript',
-      'Type Conversion Methods that Include All of ECMAScript',
-      'Type Conversion Methods that Include All of ECMAScript',
+      'Internal: include All Type Conversion Methods of <strong>ECMAScript</strong>',
+      'Internal: include All Comparison Methods of <strong>ECMAScript</strong>',
+      'Modules: include All Object Methods(Static, Prototype, Constructor) of <strong>ECMAScript</strong>',
+      'Toolkit-Array: Array operation utility',
+      'Toolkit-String: String operation utility',
+      'Toolkit-Function: Tools to control the execution of functions',
+      'Toolkit-Object: Tools for operating JavaScript objects',
+      'Toolkit-Promise: Asynchronous utility tools',
     ],
     actions: [
       {
         text: 'Get Started',
-        link: '/docs/typeGrammar/languageType'
+        link: '/docs/guide/introduction'
+      }
+    ],
+    terminal: [
+      {
+        label: '$',
+        text: 'pnpm install @nant-es/internal'
+      },
+      {
+        label: '$',
+        text: 'pnpm install @nant-es/modules'
+      },
+      {
+        label: '$',
+        text: 'pnpm install @nant-es/toolkit'
       }
     ],
     features: [
       {
         title: 'Best performance',
-        desc: 'The best performance of Nant Tech Toolkit',
+        desc: 'Shows better performance in modern JavaScript runtime',
       },
       {
-        title: 'Best performance',
-        desc: 'The best performance of Nant Tech Toolkit',
+        title: 'Small bundle size',
+        desc: 'Each method has a small code volume in every lib',
       },
       {
-        title: 'Best performance',
-        desc: 'The best performance of Nant Tech Toolkit',
+        title: 'Specification Implementation',
+        desc: 'Each internal method and module method is based on the latest ECMAScript specification',
       },
       {
-        title: 'Best performance',
-        desc: 'The best performance of Nant Tech Toolkit',
+        title: 'Robust types',
+        desc: 'Every method has strong type support.',
       },
       {
-        title: 'Best performance',
-        desc: 'The best performance of Nant Tech Toolkit',
+        title: 'Complete test coverage',
+        desc: 'Each method implemented has been completely tested, and the test coverage is 100%',
       },
       {
-        title: 'Best performance',
-        desc: 'The best performance of Nant Tech Toolkit',
+        title: 'Runtime support',
+        desc: 'Supports all JavaScript environments, including Node.js, Deno, Bun, and browsers.',
       }
     ]
   }
@@ -165,9 +180,15 @@ export const siteConfig = {
 
 export const siteConfigNav: TypeSiteConfigNavItem[] = [
   {
+    title: 'Guide',
+    activeLink: 'guide',
+    link: '/docs/guide/introduction',
+    label: 'DataType'
+  },
+  {
     title: 'ES Internal',
     activeLink: 'internal',
-    link: '/docs/internal/languageType',
+    link: '/docs/internal/typeConversion/toPrimitive',
     label: 'DataType'
   },
   {

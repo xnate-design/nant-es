@@ -1,8 +1,12 @@
 import type { SandpackFile } from '@codesandbox/sandpack-react';
 
+export const AppJSPath = `/index.js`;
+export const StylesCSSPath = `/styles.css`;
+export const SUPPORTED_FILES = [AppJSPath, StylesCSSPath];
+
 export const createFileMap = (codeSnippets: any) => {
   return codeSnippets.reduce((result: Record<string, SandpackFile>, codeSnippet: React.ReactElement) => {
-    if ((codeSnippet.type as any).mdxName !== 'pre') {
+    if ((codeSnippet.type as any).name !== 'Pre') {
       return result;
     }
     const { props } = codeSnippet.props.children;
@@ -21,7 +25,7 @@ export const createFileMap = (codeSnippets: any) => {
       }
     } else {
       if (props.className === 'language-js') {
-        filePath = '/App.js';
+        filePath = '/index.js';
       } else if (props.className === 'language-css') {
         filePath = '/styles.css';
       } else {
