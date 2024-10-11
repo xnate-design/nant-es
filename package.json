@@ -14,7 +14,10 @@
     "build": "lerna run build",
     "publish": "lerna publish",
     "test": "lerna run test",
-    "dev:docs": "pnpm --prefix docs run dev"
+    "test:coverage": "lerna run test:coverage",
+    "dev:docs": "pnpm --prefix docs run dev",
+    "test:browser": "vitest",
+    "test:ui": "lerna run test:ui"
   },
   "keywords": [
     "es",
@@ -35,12 +38,17 @@
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.6",
     "@types/node": "^22.5.4",
+    "@vitest/browser": "^2.1.2",
+    "@vitest/coverage-istanbul": "latest",
+    "@vitest/coverage-v8": "latest",
+    "@vitest/ui": "^2.1.2",
     "husky": "^9.1.6",
     "lerna": "^8.1.8",
+    "playwright": "^1.48.0",
     "rollup": "^4.21.2",
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-dts": "^6.1.1",
     "tslib": "^2.7.0",
-    "vitest": "^2.1.1"
+    "vitest": "latest"
   }
 }

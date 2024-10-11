@@ -18,7 +18,8 @@
   "scripts": {
     "build": "rollup -c",
     "test": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest run --ui"
   },
   "keywords": [
     "es",
@@ -101,5 +102,8 @@
   "files": [
     "dist"
   ],
-  "gitHead": "7f297d9aba080d959e020364334e6ea1c09162cd"
+  "gitHead": "7f297d9aba080d959e020364334e6ea1c09162cd",
+  "devDependencies": {
+    "@vitest/coverage-istanbul": "^2.1.2"
+  }
 }
