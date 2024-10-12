@@ -8,3 +8,27 @@ category: Internal
 tags: internal
 ---
 
+<Note>
+  抽象操作 `RequireObjectCoercible` 接收参数（ECMAScript语言值），并返回包含ECMAScript语言值的*normal completion*
+  或者*throw completion*。
+</Note>
+
+## Description
+
+`RequireObjectCoercible`接收的参数如果使用`ToObject`操作后不能转换为`Object`的话，则抛出`TypeError`异常。 否则返回参数。
+
+## Signature
+
+```ts
+function requireObjectCoercible(it: LanguageType): LanguageType | TypeError
+```
+
+
+## Examples
+
+<Sandpack>
+  ```js
+  import { requireObjectCoercible } from '@nant-es/internal';
+  const result = requireObjectCoercible(null);
+  ```
+</Sandpack>
