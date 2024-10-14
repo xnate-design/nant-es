@@ -1,6 +1,6 @@
 'use client';
 import { Sandpack } from '@codesandbox/sandpack-react';
-import { createFileMap } from './createFileMap';
+import { createFileMap, createDependencyMap } from './createFileMap';
 import { Children } from 'react';
 
 type SandpackProps = {
@@ -13,6 +13,7 @@ export default function SandpackRoot(props: SandpackProps) {
   const { children } = props;
   const codeSnippets = Children.toArray(children) as React.ReactElement[];
   const files = createFileMap(codeSnippets);
+  const depMap = createDependencyMap();
 
   files['/styles.css'] = {
     code: [files['/styles.css']?.code ?? ''].join('\n\n'),
@@ -25,6 +26,9 @@ export default function SandpackRoot(props: SandpackProps) {
         theme={'light'}
         files={files}
         template='vanilla'
+        customSetup={{
+          dependencies: depMap
+        }}
         options={{
           showTabs: false,
           layout: "console"

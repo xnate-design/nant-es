@@ -1,0 +1,32 @@
+---
+title: IsArray
+excerpt: IsArray
+date: 2024-10-10
+type: Docs
+category: Internal
+tags: internal
+---
+
+
+<Note>
+  抽象操作 `IsArray` 接收参数（ECMAScript语言值），并返回包含Boolean值。
+</Note>
+
+## Description
+
+抽象操作[isArray](https://tc39.es/ecma262/#sec-isarray)接收的参数如果使用`ToObject`操作后不能转换为`Object`的话，则抛出`TypeError`异常。 否则返回参数。
+
+## Signature
+
+```ts
+function isArray(it: LanguageType): Boolean
+```
+
+
+## Examples
+
+<Sandpack>
+  ```js
+
+  ```
+</Sandpack>

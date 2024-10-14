@@ -89,8 +89,7 @@ function SidebarDetail(props: {
   const { item, breadcrumbs = [], setSidebarExpanded } = props;
   const pathname = usePathname();
   const isActive = pathname === item.path;
-
-  const isCollapsed = !!item.collapsed;
+  const isCollapsed = isActive || !!item.collapsed;
 
   return (
     <div className='p-0 m-0 bg-transparent border-none rounded-none'>

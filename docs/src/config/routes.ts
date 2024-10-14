@@ -56,6 +56,74 @@ const internal = [
         name: 'RequireObjectCoercible',
         path: '/docs/internal/comparison/requireObjectCoercible'
       },
+      {
+        name: 'IsArguments',
+        path: '/docs/internal/comparison/isArguments'
+      },
+      {
+        name: 'IsArrayBuffer',
+        path: '/docs/internal/comparison/isArrayBuffer'
+      },
+      {
+        name: 'IsArrayLike',
+        path: '/docs/internal/comparison/isArrayLike'
+      },
+      {
+        name: 'IsArrayLikeObject',
+        path: '/docs/internal/comparison/isArrayLikeObject'
+      },
+      {
+        name: 'IsArray',
+        path: '/docs/internal/comparison/isArray'
+      },
+      {
+        name: 'IsCallable',
+        path: '/docs/internal/comparison/isCallable'
+      },
+      {
+        name: 'IsConstructor',
+        path: '/docs/internal/comparison/isConstructor'
+      },
+      {
+        name: 'IsRegExp',
+        path: '/docs/internal/comparison/isRegExp'
+      },
+      {
+        name: 'IsExtensible',
+        path: '/docs/internal/comparison/isExtensible'
+      },
+      {
+        name: 'IsStringWellFormedUnicode',
+        path: '/docs/internal/comparison/isStringWellFormedUnicode'
+      },
+      {
+        name: 'SameType',
+        path: '/docs/internal/comparison/sameType'
+      },
+      {
+        name: 'SameValue',
+        path: '/docs/internal/comparison/sameValue'
+      },
+      {
+        name: 'SameValueZero',
+        path: '/docs/internal/comparison/sameValueZero'
+      },
+      {
+        name: 'SameValueNonNumber',
+        path: '/docs/internal/comparison/sameValueNonNumber'
+      },
+      {
+        name: 'IsLessThan',
+        path: '/docs/internal/comparison/isLessThan'
+      },
+      {
+        name: 'IsLooselyEqual',
+        path: '/docs/internal/comparison/isLooselyEqual'
+      },
+      {
+        name: 'IsStrictlyEqual',
+        path: '/docs/internal/comparison/isStrictlyEqual'
+      }
     ]
   }
 ];

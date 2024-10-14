@@ -44,3 +44,12 @@ export const createFileMap = (codeSnippets: any) => {
     return result;
   }, {});
 };
+
+
+
+
+export const createDependencyMap = () => {
+  return {
+    "@nant-es/internal": "latest",
+  };
+}
